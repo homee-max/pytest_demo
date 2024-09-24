@@ -21,7 +21,7 @@ jobs:
 
     - name: Run test
       run: |
-        pytest --cov=./demo --cov-report=html --cov-config=.coveragerc tests/
+        pytest --cov=./demo --cov-report=xml --cov-config=.coveragerc tests/
 
     - name: Get Cover 
       uses: orgoro/coverage@v3.2
