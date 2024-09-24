@@ -10,4 +10,4 @@ class Calculator:
     def multiply(self, x, y) -> int:
         if x > 10:
             print('x>10')
-        return x * y 
+        return x * y
