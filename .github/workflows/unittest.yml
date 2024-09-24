@@ -21,10 +21,10 @@ jobs:
 
     - name: Run test
       run: |
-        pytest --cov=./demo --cov-report=xml --cov-config=.coveragerc tests/
+        pytest --cov=demo/ --cov-report xml:./coverage/coverage.xml --cov-config=.coveragerc tests/
 
     - name: Get Cover 
       uses: orgoro/coverage@v3.2
       with:
-        coverageFile: coverage.xml
+        coverageFile: ./coverage/coverage.xml
         token: ${{ secrets.GITHUB_TOKEN }}
